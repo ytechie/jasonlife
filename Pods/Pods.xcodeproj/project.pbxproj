@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30E3C98BD96D7A9DB3E579E87DEF7CAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C08FF6146C48D3869EBE8508FB7BBD84 /* Pods-Jason Life-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6532773A9E1350D542191ED843303FD3 /* Pods-Jason Life-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22FBCFEB125894E465C35D85D8FBFC58 /* libPods-Jason Life.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jason Life.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1F53E2D2FED91C3DE189CF1AC23196 /* RaygunMessageDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RaygunMessageDetails.h; path = Raygun4iOS.framework/Headers/RaygunMessageDetails.h; sourceTree = "<group>"; };
+		40F0E8FFC0AE709A14E37EC33B0ACA73 /* Pods-Jason Life-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Jason Life-acknowledgements.plist"; sourceTree = "<group>"; };
+		48117CEFA1B6250EEB324C5844F70826 /* Pods-Jason Life-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Jason Life-acknowledgements.markdown"; sourceTree = "<group>"; };
+		58A541F9FBBE347A2901320950C50EDC /* RaygunMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RaygunMessage.h; path = Raygun4iOS.framework/Headers/RaygunMessage.h; sourceTree = "<group>"; };
+		6532773A9E1350D542191ED843303FD3 /* Pods-Jason Life-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Jason Life-dummy.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6D2F2B6E15265FCD648967B560F48099 /* Raygun4iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Raygun4iOS.framework; sourceTree = "<group>"; };
+		6FC85A0DABBA1D514D02D57FA38BF977 /* RaygunEnvironmentMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RaygunEnvironmentMessage.h; path = Raygun4iOS.framework/Headers/RaygunEnvironmentMessage.h; sourceTree = "<group>"; };
+		77885146D694CB7F53C4DE910B49E55F /* Pods-Jason Life-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Jason Life-resources.sh"; sourceTree = "<group>"; };
+		8C964250C0C712B82D166B093355A802 /* RaygunUserInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RaygunUserInfo.h; path = Raygun4iOS.framework/Headers/RaygunUserInfo.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CB4C08E98F3063D74F3272059CB8CB3 /* Pods-Jason Life-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Jason Life-frameworks.sh"; sourceTree = "<group>"; };
+		B80452432CD17B4D507B59FCE2F110C8 /* Raygun4iOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Raygun4iOS.h; path = Raygun4iOS.framework/Headers/Raygun4iOS.h; sourceTree = "<group>"; };
+		C2776669A8187E0D9B2EA35A7BCB8D55 /* Raygun.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Raygun.h; path = Raygun4iOS.framework/Headers/Raygun.h; sourceTree = "<group>"; };
+		C503C0AC3B7326AB6E0404D5EC26CE58 /* RaygunErrorMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RaygunErrorMessage.h; path = Raygun4iOS.framework/Headers/RaygunErrorMessage.h; sourceTree = "<group>"; };
+		C6E08A9674AE6D534BEE9EDD6E0B060C /* Pods-Jason Life.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Jason Life.release.xcconfig"; sourceTree = "<group>"; };
+		D619C5250A96EAD0B47ADF75C59E55C5 /* Pods-Jason Life.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Jason Life.debug.xcconfig"; sourceTree = "<group>"; };
+		FD93CBC9F4254808B8C93A54D801FE54 /* RaygunClientMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RaygunClientMessage.h; path = Raygun4iOS.framework/Headers/RaygunClientMessage.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81A20F4312249349A07B2A0610583A36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E3C98BD96D7A9DB3E579E87DEF7CAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02A6595D0BFD77547A61919D72B13969 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22FBCFEB125894E465C35D85D8FBFC58 /* libPods-Jason Life.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6ECD0386D0F1BB97BB506B7CA8213436 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F27F27B70D21A1249AA043E4031ECA47 /* Raygun4iOS */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7964CE073A2EABB877400E8C7FAFB52A /* Pods-Jason Life */ = {
+			isa = PBXGroup;
+			children = (
+				48117CEFA1B6250EEB324C5844F70826 /* Pods-Jason Life-acknowledgements.markdown */,
+				40F0E8FFC0AE709A14E37EC33B0ACA73 /* Pods-Jason Life-acknowledgements.plist */,
+				6532773A9E1350D542191ED843303FD3 /* Pods-Jason Life-dummy.m */,
+				9CB4C08E98F3063D74F3272059CB8CB3 /* Pods-Jason Life-frameworks.sh */,
+				77885146D694CB7F53C4DE910B49E55F /* Pods-Jason Life-resources.sh */,
+				D619C5250A96EAD0B47ADF75C59E55C5 /* Pods-Jason Life.debug.xcconfig */,
+				C6E08A9674AE6D534BEE9EDD6E0B060C /* Pods-Jason Life.release.xcconfig */,
+			);
+			name = "Pods-Jason Life";
+			path = "Target Support Files/Pods-Jason Life";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6ECD0386D0F1BB97BB506B7CA8213436 /* Pods */,
+				02A6595D0BFD77547A61919D72B13969 /* Products */,
+				86CDCDC80A88716AC7D07DD295A91222 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		86CDCDC80A88716AC7D07DD295A91222 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7964CE073A2EABB877400E8C7FAFB52A /* Pods-Jason Life */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F27F27B70D21A1249AA043E4031ECA47 /* Raygun4iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C2776669A8187E0D9B2EA35A7BCB8D55 /* Raygun.h */,
+				B80452432CD17B4D507B59FCE2F110C8 /* Raygun4iOS.h */,
+				FD93CBC9F4254808B8C93A54D801FE54 /* RaygunClientMessage.h */,
+				6FC85A0DABBA1D514D02D57FA38BF977 /* RaygunEnvironmentMessage.h */,
+				C503C0AC3B7326AB6E0404D5EC26CE58 /* RaygunErrorMessage.h */,
+				58A541F9FBBE347A2901320950C50EDC /* RaygunMessage.h */,
+				2D1F53E2D2FED91C3DE189CF1AC23196 /* RaygunMessageDetails.h */,
+				8C964250C0C712B82D166B093355A802 /* RaygunUserInfo.h */,
+				F58D72512BA0217D1B567891BB0A55E9 /* Frameworks */,
+			);
+			path = Raygun4iOS;
+			sourceTree = "<group>";
+		};
+		F58D72512BA0217D1B567891BB0A55E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D2F2B6E15265FCD648967B560F48099 /* Raygun4iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAABDD1E60C14BD1D9F7524E80D512ED /* Pods-Jason Life */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1231EA5FE0CFC36D6CD2FC4E9CC47347 /* Build configuration list for PBXNativeTarget "Pods-Jason Life" */;
+			buildPhases = (
+				1B0D3C708AD04072A8A5F59E861F1853 /* Sources */,
+				81A20F4312249349A07B2A0610583A36 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Jason Life";
+			productName = "Pods-Jason Life";
+			productReference = 22FBCFEB125894E465C35D85D8FBFC58 /* libPods-Jason Life.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0920;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 02A6595D0BFD77547A61919D72B13969 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAABDD1E60C14BD1D9F7524E80D512ED /* Pods-Jason Life */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B0D3C708AD04072A8A5F59E861F1853 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C08FF6146C48D3869EBE8508FB7BBD84 /* Pods-Jason Life-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		70284902724E5F0CB1E02AB73A2E2CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AE0BB8F8454BEC8B7BE5A19FE8D3F2CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D0EFBE6CCE9D35FF18FB841C83B4DF66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E08A9674AE6D534BEE9EDD6E0B060C /* Pods-Jason Life.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF776AEA931AB6B97DC482A3E84A62B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D619C5250A96EAD0B47ADF75C59E55C5 /* Pods-Jason Life.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1231EA5FE0CFC36D6CD2FC4E9CC47347 /* Build configuration list for PBXNativeTarget "Pods-Jason Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF776AEA931AB6B97DC482A3E84A62B8 /* Debug */,
+				D0EFBE6CCE9D35FF18FB841C83B4DF66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0BB8F8454BEC8B7BE5A19FE8D3F2CD /* Debug */,
+				70284902724E5F0CB1E02AB73A2E2CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

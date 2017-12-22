@@ -1,0 +1,16 @@
+{
+	LocationFunctionURL = "";
+	WADOTKey = "";
+	Locations = (
+		{
+			Name = Work;
+			Lat = 40;
+			Long = -120;
+		},
+		{
+			Name = Home;
+			Lat = 41;
+			Long = -121;
+		},
+	);
+}

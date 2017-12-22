@@ -1,0 +1,1 @@
+../../../../Raygun4iOS/Raygun4iOS.framework/Headers/RaygunUserInfo.h
