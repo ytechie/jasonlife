@@ -4,40 +4,10 @@ import UserNotifications
 import Foundation;
 
 class FirstViewController: UIViewController {
-    //var locationManager: CLLocationManager!;
-    
-    //let locations = Locations();
-    
     @IBOutlet weak var tollTextArea: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //let appDelegate = UIApplication.shared.delegate as! AppDelegate;
-        //appDelegate.locations.
-        
-        //locations = Locations();
-        
-        /*
-        checkLocationAccess();
-        
-        locationManager = CLLocationManager();
-        
-        //Requests permission to use location services whenever the app is running
-        locationManager.delegate = self;
-        //Only allows foreground unless set
-        locationManager.allowsBackgroundLocationUpdates = true;
-        locationManager.requestAlwaysAuthorization()
-        
-        //Only need these if live location is needed
-        //locationManager.startUpdatingLocation();
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-        
-        locationManager.startMonitoringSignificantLocationChanges();
-        
-        locationManager.requestLocation();
- */
-        
         
         registerLocalNotifications();
         refreshTollData();
@@ -55,9 +25,6 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    
-
     struct Trip : Codable {
         let TripName: String
         let CurrentToll: Int
@@ -118,29 +85,5 @@ class FirstViewController: UIViewController {
             self.tollTextArea.text = text;
         }
     }
-    
-
-/*
-    func checkLocationAccess() {
-        let status = CLLocationManager.authorizationStatus()
-        if status == .NotDetermined || status == .Denied || status == .AuthorizedWhenInUse {
-            
-            // present an alert indicating location authorization required
-            // and offer to take the user to Settings for the app via
-            // UIApplication -openUrl: and UIApplicationOpenSettingsURLString
-            dispatch_async(dispatch_get_main_queue(), {
-                let alert = UIAlertController(title: "Error!", message: "GPS access is restricted. In order to use tracking, please enable GPS in the Settigs app under Privacy, Location Services.", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "Go to Settings now", style: UIAlertActionStyle.Default, handler: { (alert: UIAlertAction!) in
-                    print("")
-                    UIApplication.sharedApplication().openURL(NSURL(string:UIApplicationOpenSettingsURLString)!)
-                }))
-                // self.presentViewController(alert, animated: true, completion: nil)
-                self.window?.rootViewController?.presentViewController(alert, animated: true, completion: nil)
-            })
-            
-            locationManager.requestAlwaysAuthorization()
-            locationManager.requestWhenInUseAuthorization()
-        }
-    }*/
 }
 

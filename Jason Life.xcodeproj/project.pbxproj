@@ -14,7 +14,6 @@
 		483947ED1FCDC435008A9635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 483947EB1FCDC435008A9635 /* Main.storyboard */; };
 		483947EF1FCDC435008A9635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 483947EE1FCDC435008A9635 /* Assets.xcassets */; };
 		483947F21FCDC435008A9635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 483947F01FCDC435008A9635 /* LaunchScreen.storyboard */; };
-		4848BD8B1FCF87C9009C88E9 /* Geofencing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848BD8A1FCF87C9009C88E9 /* Geofencing.swift */; };
 		484C44531FE5939900673209 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484C44521FE5939900673209 /* Settings.plist */; };
 		486F15BE1FCE7EE200AE8D37 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486F15BD1FCE7EE200AE8D37 /* Notifications.swift */; };
 		488EA4311FD3147F00C94F92 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488EA42F1FD120BB00C94F92 /* Locations.swift */; };
@@ -34,7 +33,6 @@
 		483947EE1FCDC435008A9635 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		483947F11FCDC435008A9635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		483947F31FCDC435008A9635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4848BD8A1FCF87C9009C88E9 /* Geofencing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geofencing.swift; sourceTree = "<group>"; };
 		484C44521FE5939900673209 /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Settings.plist; sourceTree = "<group>"; };
 		486F15BD1FCE7EE200AE8D37 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		488EA42F1FD120BB00C94F92 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 				483947F01FCDC435008A9635 /* LaunchScreen.storyboard */,
 				483947F31FCDC435008A9635 /* Info.plist */,
 				486F15BD1FCE7EE200AE8D37 /* Notifications.swift */,
-				4848BD8A1FCF87C9009C88E9 /* Geofencing.swift */,
 				488EA42F1FD120BB00C94F92 /* Locations.swift */,
 				48BEE0671FD339B400B23488 /* Util.swift */,
 				48BEE0691FD37D6D00B23488 /* Jason Life-Bridging-Header.h */,
@@ -245,7 +242,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				488EA4311FD3147F00C94F92 /* Locations.swift in Sources */,
-				4848BD8B1FCF87C9009C88E9 /* Geofencing.swift in Sources */,
 				486F15BE1FCE7EE200AE8D37 /* Notifications.swift in Sources */,
 				483947EA1FCDC435008A9635 /* SecondViewController.swift in Sources */,
 				48BEE0681FD339B400B23488 /* Util.swift in Sources */,

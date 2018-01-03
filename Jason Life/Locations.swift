@@ -15,7 +15,6 @@ class Locations : NSObject, CLLocationManagerDelegate {
         locationManager.requestAlwaysAuthorization()
         
         //Only need these if live location is needed
-        //locationManager.startUpdatingLocation();
         locationManager.desiredAccuracy = kCLLocationAccuracyBest;
         
         locationManager.startMonitoringSignificantLocationChanges();
@@ -102,7 +101,6 @@ class Locations : NSObject, CLLocationManagerDelegate {
             // Make sure region monitoring is supported.
             if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
                 // Register the region.
-                //let maxDistance = self.locationManager.maximumRegionMonitoringDistance
                 let region = CLCircularRegion(center: center,
                                               radius: 100, identifier: identifier)
                 region.notifyOnEntry = true
