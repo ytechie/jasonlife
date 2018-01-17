@@ -10,10 +10,21 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("viewDidLoad");
+        
         registerLocalNotifications();
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("viewWillAppear");
         refreshTollData();
         
-        tollUpdateTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(refreshTollData), userInfo: nil, repeats: true)
+        tollUpdateTimer = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(refreshTollData), userInfo: nil, repeats: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("viewWillDisappear");
+        tollUpdateTimer.invalidate();
     }
     
     func registerLocalNotifications() {
@@ -77,8 +88,8 @@ class FirstViewController: UIViewController {
         
         var txt:String = "";
         
-        txt += "Southbound: " + String(describing: southbound.first!.CurrentToll) + "\n";
-        txt += "Northbound: " + String(describing: northbound.first!.CurrentToll) + "\n";
+        txt += "Southbound: " + formatCurrency(value: Double(southbound.first!.CurrentToll) / 100.0) + "\n";
+        txt += "Northbound: " + formatCurrency(value: Double(northbound.first!.CurrentToll) / 100.0) + "\n";
         
         setTollText(text: txt);
         //setTollText(text: Date().timeIntervalSinceReferenceDate.description) //Just for testing UI refresh
@@ -88,6 +99,15 @@ class FirstViewController: UIViewController {
         DispatchQueue.main.async {
             self.tollTextArea.text = text;
         }
+    }
+    
+    func formatCurrency(value: Double) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.maximumFractionDigits = 2
+        formatter.locale = Locale(identifier: Locale.current.identifier)
+        let result = formatter.string(from: value as NSNumber)
+        return result!
     }
 }
 
