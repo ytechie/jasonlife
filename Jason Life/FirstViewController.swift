@@ -63,9 +63,6 @@ class FirstViewController: UIViewController {
     }
     
     @objc  func refreshTollData() {
-        
-        tollTextArea.text = "";
-        
         let url = URL(string: "https://wsdot.wa.gov/traffic/api/api/tolling?AccessCode=" + AppSettings.getWADOTKey())
         
         let task = URLSession.shared.dataTask(with: url!) { data, response, error in
@@ -81,7 +78,6 @@ class FirstViewController: UIViewController {
             let decoder = JSONDecoder()
             let trips = try! decoder.decode([Trip].self, from: data)
             
-            self.setTollText(text:"Loaded \(trips.count) trips");
             self.tripsLoaded(trips: trips);
         }
         
@@ -99,19 +95,20 @@ class FirstViewController: UIViewController {
                 self.playTollChangeSound();
             }
             self.prevTollsTotal = newTollsTotal;
+            
+            var txt:String = "";
+            txt += "Southbound: " + formatCurrency(value: Double(southbound.first!.CurrentToll) / 100.0) + "\n";
+            txt += "Northbound: " + formatCurrency(value: Double(northbound.first!.CurrentToll) / 100.0) + "\n";
+            
+            setTollText(text: txt);
+            //setTollText(text: Date().timeIntervalSinceReferenceDate.description) //Just for testing UI refresh
         }
-        
-        var txt:String = "";
-        txt += "Southbound: " + formatCurrency(value: Double(southbound.first!.CurrentToll) / 100.0) + "\n";
-        txt += "Northbound: " + formatCurrency(value: Double(northbound.first!.CurrentToll) / 100.0) + "\n";
-        
-        setTollText(text: txt);
-        //setTollText(text: Date().timeIntervalSinceReferenceDate.description) //Just for testing UI refresh
     }
     
     func setTollText(text:String) {
         DispatchQueue.main.async {
             self.tollTextArea.text = text;
+            print("Setting toll text: " + text)
         }
     }
     
