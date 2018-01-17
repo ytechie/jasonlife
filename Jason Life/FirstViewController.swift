@@ -9,7 +9,7 @@ class FirstViewController: UIViewController {
     var tollUpdateTimer: Timer!
     
     //Totally hacky way to track toll changes
-    var prevTollsTotal: Double = 0.0;
+    var prevTollsTotal: Double = -1.0;
     
     //For the toll change sound
     var player : AVAudioPlayer?
@@ -95,7 +95,9 @@ class FirstViewController: UIViewController {
         
         let newTollsTotal = Double(southbound.first!.CurrentToll) + Double(northbound.first!.CurrentToll);
         if(newTollsTotal != self.prevTollsTotal) {
-            self.playTollChangeSound();
+            if(self.prevTollsTotal != -1.0) { //don't play sound the first time
+                self.playTollChangeSound();
+            }
             self.prevTollsTotal = newTollsTotal;
         }
         
