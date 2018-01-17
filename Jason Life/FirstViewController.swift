@@ -5,12 +5,15 @@ import Foundation;
 
 class FirstViewController: UIViewController {
     @IBOutlet weak var tollTextArea: UITextView!
+    var tollUpdateTimer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         registerLocalNotifications();
         refreshTollData();
+        
+        tollUpdateTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(refreshTollData), userInfo: nil, repeats: true)
     }
     
     func registerLocalNotifications() {
@@ -41,7 +44,7 @@ class FirstViewController: UIViewController {
         let EndLongitude: Double
     }
     
-    func refreshTollData() {
+    @objc  func refreshTollData() {
         
         tollTextArea.text = "";
         
@@ -78,6 +81,7 @@ class FirstViewController: UIViewController {
         txt += "Northbound: " + String(describing: northbound.first!.CurrentToll) + "\n";
         
         setTollText(text: txt);
+        //setTollText(text: Date().timeIntervalSinceReferenceDate.description) //Just for testing UI refresh
     }
     
     func setTollText(text:String) {
