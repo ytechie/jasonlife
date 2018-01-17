@@ -2,10 +2,17 @@ import UIKit
 import CoreLocation
 import UserNotifications
 import Foundation;
+import AVFoundation;
 
 class FirstViewController: UIViewController {
     @IBOutlet weak var tollTextArea: UITextView!
     var tollUpdateTimer: Timer!
+    
+    //Totally hacky way to track toll changes
+    var prevTollsTotal: Double = 0.0;
+    
+    //For the toll change sound
+    var player : AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,8 +93,13 @@ class FirstViewController: UIViewController {
         let southbound = trips.filter { $0.TripName == "405tp02784" }
         let northbound = trips.filter { $0.TripName == "405tp01587" }
         
-        var txt:String = "";
+        let newTollsTotal = Double(southbound.first!.CurrentToll) + Double(northbound.first!.CurrentToll);
+        if(newTollsTotal != self.prevTollsTotal) {
+            self.playTollChangeSound();
+            self.prevTollsTotal = newTollsTotal;
+        }
         
+        var txt:String = "";
         txt += "Southbound: " + formatCurrency(value: Double(southbound.first!.CurrentToll) / 100.0) + "\n";
         txt += "Northbound: " + formatCurrency(value: Double(northbound.first!.CurrentToll) / 100.0) + "\n";
         
@@ -108,6 +120,22 @@ class FirstViewController: UIViewController {
         formatter.locale = Locale(identifier: Locale.current.identifier)
         let result = formatter.string(from: value as NSNumber)
         return result!
+    }
+    
+    func playTollChangeSound() {
+        let path = Bundle.main.path(forResource: "tollchange", ofType:"mp3")!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            let sound = try AVAudioPlayer(contentsOf: url)
+            self.player = sound
+            sound.numberOfLoops = 1
+            sound.prepareToPlay()
+            sound.play()
+        } catch {
+            print("error loading file")
+            // couldn't load file :(
+        }
     }
 }
 

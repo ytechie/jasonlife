@@ -18,6 +18,8 @@
 		486F15BE1FCE7EE200AE8D37 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486F15BD1FCE7EE200AE8D37 /* Notifications.swift */; };
 		488EA4311FD3147F00C94F92 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488EA42F1FD120BB00C94F92 /* Locations.swift */; };
 		48BEE0681FD339B400B23488 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BEE0671FD339B400B23488 /* Util.swift */; };
+		48FE092B200EF718006C4243 /* tollchange.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 48FE092A200EF718006C4243 /* tollchange.mp3 */; };
+		48FE092D200EF7F3006C4243 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FE092C200EF7F3006C4243 /* AVFoundation.framework */; };
 		F73EFF9F3BA4A2EED35C4A78 /* libPods-Jason Life.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E50A6902C0B6E6CC2EC6F721 /* libPods-Jason Life.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		488EA42F1FD120BB00C94F92 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 		48BEE0671FD339B400B23488 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		48BEE0691FD37D6D00B23488 /* Jason Life-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jason Life-Bridging-Header.h"; sourceTree = "<group>"; };
+		48FE092A200EF718006C4243 /* tollchange.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tollchange.mp3; sourceTree = "<group>"; };
+		48FE092C200EF7F3006C4243 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E50A6902C0B6E6CC2EC6F721 /* libPods-Jason Life.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jason Life.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -46,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48FE092D200EF7F3006C4243 /* AVFoundation.framework in Frameworks */,
 				F73EFF9F3BA4A2EED35C4A78 /* libPods-Jason Life.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +79,7 @@
 		483947E41FCDC435008A9635 /* Jason Life */ = {
 			isa = PBXGroup;
 			children = (
+				48FE092A200EF718006C4243 /* tollchange.mp3 */,
 				483947E51FCDC435008A9635 /* AppDelegate.swift */,
 				483947E71FCDC435008A9635 /* FirstViewController.swift */,
 				483947E91FCDC435008A9635 /* SecondViewController.swift */,
@@ -94,6 +100,7 @@
 		58E5CCEE2BF7995E3746E35E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				48FE092C200EF7F3006C4243 /* AVFoundation.framework */,
 				E50A6902C0B6E6CC2EC6F721 /* libPods-Jason Life.a */,
 			);
 			name = Frameworks;
@@ -178,6 +185,7 @@
 			files = (
 				483947F21FCDC435008A9635 /* LaunchScreen.storyboard in Resources */,
 				484C44531FE5939900673209 /* Settings.plist in Resources */,
+				48FE092B200EF718006C4243 /* tollchange.mp3 in Resources */,
 				483947EF1FCDC435008A9635 /* Assets.xcassets in Resources */,
 				483947ED1FCDC435008A9635 /* Main.storyboard in Resources */,
 			);
